@@ -1,158 +1,156 @@
-**Regression Project (Store Sales -- Time Series Forecasting)**
 
-This is a time series forecasting problem. In this project, you'll
-predict store sales on data from Corporation Favorita, a large
-Ecuadorian-based grocery retailer.
+#  A Comprehensive Data Analysis of the Favorita Corporation from 2013-2017.
 
-Specifically, you are to **build a model** that more accurately predicts
-the unit sales for thousands of items sold at different Favorita stores.
 
-The training data includes dates, store, and product information,
-whether that item was being promoted, as well as the sales numbers.
-Additional files include supplementary information that may be useful in
-building your models
 
-**File Descriptions and Data Field Information**
 
-train.csv
+## Project Title
 
--   The training data, comprising time series of features store_nbr, family, 
-    and onpromotion as well as the target sales.
+Building Accurate Models for Unit Sales Prediction in Favorita Stores using Time Series Forecasting.
 
--   **store_nbr** identifies the store at which the products are sold.
 
--   **family** identifies the type of product sold.
 
--   **sales** gives the total sales for a product family at a particular store
-    at a given date. Fractional values are possible since products can be sold in 
-    fractional units (1.5 kg of cheese, for instance, as opposed to 1 bag of chips).
 
--   **onpromotion** gives the total number of items in a product family that
-    were being promoted at a store at a given date.
+## Summary
 
-test.csv
+| Code      | Name        | Published Article |  Deployed App |
 
--   The test data, having the same features as the training data. You will predict the target sales for the dates in this file.
+|-----------|-------------|:-------------:|------:|
 
--   The dates in the test data are for the 15 days after the last date in the training data.
+| LP2 | Building Accurate Models for Unit Sales Prediction in Favorita Stores using Time Series Forecasting. |() | ()|
 
-transaction.csv
 
--   Contains date, store_nbr and transaction made on that specific date.
 
-sample_submission.csv
 
--   A sample submission file in the correct format.
 
-stores.csv
+## Project Description
 
--   Store metadata, including city, state, type, and cluster.
+# Business understanding
 
--   cluster is a grouping of similar stores.
+A time series is a sequence of data points that are indexed and ordered chronologically over time. Time series data can be observed at regular or irregular intervals and can be collected over any time period, ranging from seconds to decades or even centuries. Time series data can be univariate (i.e., a single variable is recorded over time) or multivariate (i.e., multiple variables are recorded over time).Favorita Corporation is an Ecuadorian company that creates and invests in the commercial, industrial and real estate areas. Its subsidiaries have activities in six countries in the region, including Panama, Paraguay, Peru, Colombia, Costa Rica and Chile. They offer the best products, services and experiences in an efficient, sustainable and responsible way to improve the quality of life.
 
-oil.csv
 
--   **Daily oil price** which includes values during both the train and
-     test data timeframes. (Ecuador is an oil-dependent country and its
-     economical health is highly vulnerable to shocks in oil prices.)
 
-holidays_events.csv
 
--   Holidays and Events, with metadata
+The aim of this project is to forecast the unit sales of the products across different stores. This is to optimize their inventory management , marketing strategies  and pricing  decisions. To achieve this results, we employed the use of time series in collaboration with different machine learning algorithms via the CRISP-DM framework.
 
-> **NOTE**: Pay special attention to the transferred column. A holiday
-> that is transferred officially falls on that calendar day but was
-> moved to another date by the government. A transferred day is more
-> like a normal day than a holiday. To find the day that it was
-> celebrated, look for the corresponding row where type is **Transfer**.
->
-> For example, the holiday Independencia de Guayaquil was transferred
-> from 2012-10-09 to 2012-10-12, which means it was celebrated on
-> 2012-10-12. Days that are type **Bridge** are extra days that are
-> added to a holiday (e.g., to extend the break across a long weekend).
-> These are frequently made up by the type **Work Day** which is a day
-> not normally scheduled for work (e.g., Saturday) that is meant to
-> payback the Bridge.
 
--   Additional holidays are days added a regular calendar holiday, for
-    example, as typically happens around Christmas (making Christmas
-    Eve a holiday).
 
-**Additional Notes**
 
--   Wages in the public sector are paid every two weeks on the 15th and
-    on the last day of the month. Supermarket sales could be affected
-    by this.
+The objective of this analysis is to select the best prediction model from the different ML algorithms tested. This model will be the solution to be adopted by the company to help Favorita Corporation make insightful decisions in relation to their retail sales ,promotion and customer statisfaction.
 
--   A magnitude 7.8 earthquake struck Ecuador on April 16, 2016. People
-    rallied in relief efforts donating water and other first need
-    products which greatly affected supermarket sales for several
-    weeks after the earthquake.
 
-**Data Preparation**
 
-**Hypothesis & Questions**
 
-The questions below are to be answered. Do note that, you are free to
-draw more hypothesis from the data.
+## Hypothesis
 
-1.  Is the train dataset complete (has all the required dates)?
+- Null Hypothesis:
 
-2.  Which dates have the lowest and highest sales for each year?
+Promotional activities have a significant impact on the store sales at Corporation Favorita.
 
-3.  Did the earthquake impact sales?
 
-4.  Are certain groups of stores selling more products? (Cluster, city,
-    state, type)
 
-5.  Are sales affected by promotions, oil prices and holidays?
 
-6.  What analysis can we get from the date and its extractable features?
+- Alternate Hypothesis:
 
-7.  What is the difference between RMSLE, RMSE, MSE (or why is the MAE
-    greater than all of them?)
+Promotional activities does not have a significant impact on the store sales at Corporation Favorita.
 
-Your task is to **build a model** that more accurately predicts the unit
-sales for thousands of items.
 
-**Important**
 
--   Document process from data cleaning, analysis, assumptions, model
-    building etc. Marks will be awarded for documentation.
 
-**Rubric**
+## Questions
 
-**Documentation**:
+Q1. which city had the highest stores
 
--   Excellent: Having documentation on the project ie data cleaning,
-    analysis, hypothesis and model.
 
--   Good: Gave a summary on some of the processes
 
--   Fair: Gave a bullet list of the processes with short sentences
 
--   Poor: No documentation
+Q2. which month did we have the highest sale
 
-**Hypothesis Analysis &Visualization:**
 
--   Excellent: Validated the hypothesis and answered all questions
-    listed earlier with appropriate charts. Used relevant diagrams and
-    charts to show analysis/metrics.
 
--   Good: Validated at least 4 hypothesis and answered some of the
-    questions listed with appropriate charts. Used relevant diagrams but
-    might need some improvement and.
 
--   Fair: Lack of clarity on whether the hypothesis was true.
+Q3. which store had the highest transaction?
 
--   Poor: Not answered any of the hypothesis
 
-**Model Building:**
 
--   Excellent: Model has an RMSLE of 0.2
 
--   Good: Model has RMSLE of 0.3
+Q4. which store had the highest sale?
 
--   Fair: Model has RMSLE of 0.4
 
--   Poor: Model has RMSLE of 0.4 +
+
+
+Q5. what is the most bought product?
+
+
+
+
+## Setup
+
+...Install the required packages to be able to run the evaluation locally.
+
+You need to have [`Python 3`](https://www.python.org/) on your system (**a Python version lower than 3.10**). Then you can clone this repo and being at the repo's `root :: repository_name> ...`  follow the steps below:
+
+
+
+
+- Windows *(Python should be added to the Path variable of environment)*:
+
+       
+
+        python3 -m venv venv; venv\Scripts\activate; python -m pip install --upgrade pip; python -m pip install -r requirements.txt  
+
+
+
+
+- Linux & MacOs:
+
+       
+
+        python3 -m venv venv; source venv/bin/activate; python -m pip install --upgrade pip; python -m pip install -r requirements.txt
+
+
+
+
+The both long command-lines have a same structure, they pipe multiple commands using the symbol **;** but you may manually execute them one after another.
+
+
+
+
+1. **Create the Python's virtual environment** that isolates the required libraries of the project to avoid conflicts;
+
+2. **Activate the Python's virtual environment** so that the Python kernel & libraries will be those of the isolated environment;
+
+3. **Upgrade Pip, the installed libraries/packages manager** to have the up-to-date version that will work correctly;
+
+4. **Install the required libraries/packages** listed in the `requirements.txt` file so that it will be allow to import them into the python's scripts and notebooks without any issue.
+
+
+
+
+## App Execution
+
+...This evaluation will be automatically grade, so please follow the instructions carefully.
+
+
+
+
+You can run this command bellow being at the root of the repository to be sure your solutions are the good ones before to push your solutions.
+
+```command
+
+
+
+
+## Author
+
+## RICHARD AUSBEL FIAGBEATI
+
+
+
+
+
+
+
+
+
