@@ -140,9 +140,7 @@ You can run this command bellow being at the root of the repository to be sure y
 ```command
 
 
-
-
-## Author
+## Author 
 
 ## RICHARD AUSBEL FIAGBEATI
 
