@@ -11,13 +11,12 @@ Building Accurate Models for Unit Sales Prediction in Favorita Stores using Time
 
 
 
-## Summary
+📚 SUMMARY TABLE 📚
+   =================
 
-| Code      | Name        | Published Article |  Deployed App |
-
-|-----------|-------------|:-------------:|------:|
-
-| LP2 | Building Accurate Models for Unit Sales Prediction in Favorita Stores using Time Series Forecasting. |(https://github.com/Doctapool/Career_Accelerator_LP2-Regression) | (https://www.linkedin.com/in/richard-fiagbeati-74a3091b9/recent-activity/all/)|
+|  | Project's Name | Article Link    |  
+|:--:|:--------------:|:--------------:|
+| 1 |LP2-Regression             |  (https://www.linkedin.com/in/richard-fiagbeati-74a3091b9/recent-activity/all) | 
 
 
 
